@@ -1,0 +1,8 @@
+Combined Search for terms
+
+Provides definition for input across multiple sources
+3 different dictionary api
+urban dictionary api
+images
+
+external links to other search engines
