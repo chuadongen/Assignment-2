@@ -4,5 +4,20 @@ Provides definition for input across multiple sources
 3 different dictionary api
 urban dictionary api
 images
+popular search results
+https://www.dictionary.com/browse/classification word select search
+
 
 external links to other search engines
+
+error handling
+text to speech
+twinword no def handling
+text overflow handling
+hover over to show full?
+old image handling
+twinword blank def handling
+lingua 2nd def handling
+blank space when theres no def
+
+test scenario: http://www.butte.edu/departments/cas/tipsheets/grammar/parts_of_speech.html
