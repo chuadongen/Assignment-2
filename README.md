@@ -51,8 +51,21 @@ Since this is a word search website. I have implemented several features to ensu
 Testing is a vital part in progamming and website development. It ensures that what we are building works and is functional. Therefore, comprehensive testing methods has to be in place to help expose errors.
 ### Online validators
 To check and test my website, I used w3school's CSS and Markup service. This allowed me to validate my code and ensure that there are no errors.
-1. W3C CSS Validation Service: https://jigsaw.w3.org/css-validator/
-2. W3C Markup Validation Service: https://validator.w3.org/
+1. W3C CSS Validation Service: https://jigsaw.w3.org/css-validator/ (negative padding)
+2. W3C Markup Validation Service: https://validator.w3.org/ (html lang, title, stay img tags)
+3. Alt tag checker: https://www.google.com/url?q=https://rushax.com/tools/alt-tag-checker/&sa=D&ust=1610201918001000&usg=AOvVaw1fzVBkk-8V-eKB4Yfx9BRA (fixed missing alt tags)
+### Browsers
+To make sure my website works across browsers, I tested it both on chrome and firefox to check all of the implemeneted features
+### Devices
+To make sure the media query is working, I tested it by resizing it on chrome using inspector mode as well as using the wbesite on my physical mobile device
+## Technology
+* HTML
+* CSS
+* Bootstrap
+    * To make media query simpler
+* Jquery
+    * Make event listeners and DOM manipulation simpler
+
 
 ### Links
 To test my links, I had to ensure that internal links did not open a new page, while external links all opened a new page when clicked on. This is vital, as it improves the user experience.
