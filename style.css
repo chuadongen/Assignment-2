@@ -1,23 +1,77 @@
+/* search box style */
 #search{
     margin-top: 30px;
-    
     border-radius: 20px;
     padding: 6px;
-    border-color: white;;
+ 
+    border-width: 0px;
+    box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.75);
+    width: 80%;
+    margin-left: 10%;
+
+}
+/* navbar style */
+.navbar{
+  background-color: #00248B;
+  justify-content: center;
+}
+/* body style */
+body {
+  overflow-x:hidden;
+  background-color: #E1DEDE;
+}
+/* external images style */
+.external img{
+  width: 50px;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* external links box styling */
+.external{
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 40px;
+  background-color: grey;
+  background-color: #00248B;
+  margin-bottom: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
+/* dict title styling */
 h3{
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 40px;
 }
 
-.col-2{
-    padding-left: 0px;
-    padding-right: 0px;
-    
+
+/* suggestion box styling */
+#suggestions{
+  
+  width: 80%;
+  background-color: white;
+  margin-top: 5px;
+  position: relative;
+  z-index: 99;
+  margin-left: 10%;
+  
+}
+/* suggestion lines styling */
+.suggestion-content{
+  
+  position: relative;
+  margin-left: 5px;
+  width: 100%;
+}
+/* highlight on hover of suggestion */
+.suggestion-content:hover{
+  background-color: lightgray;
 }
 
+
+/* dictionary styling as well as text overflow handling */
 .dict{
     border: 5px;
     /* border-color: black;
@@ -31,31 +85,27 @@ h3{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    margin-bottom: 10px;
 }
+/* hover feature to show full definition, does not work with definitions that are super long */
 .dict:hover{
     overflow: visible;
     white-space:normal;
     height: 400px;
-    
+      
 }
 
 
-
-.twinword{
-    margin-top: 10px;
-}
-.lexicala{
-    margin-top: 10px;
-}
+/* positioning dictionary results */
 .results{
     margin-top: 70px;
     margin-bottom: 100px;
 }
 
 
-
-img{
-    height: 200px;
+/* preset height for search images */
+.imgs{
+    height: 200px;    
 }
 
 .container-fluid{
@@ -63,18 +113,58 @@ img{
     padding-right: 0px;
 }
 
+/* remove outline on search box */
 :focus { outline: none; }
 
-body {
-    /* The image used */
-    background-image: url("bg.jpg");
-  
-    /* Set a specific height */
-    height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* media query to scale dictionary and images accordingly */
+@media only screen and (max-width: 992px) {
+  .dict{
+    height: 150px;
+    margin-left: 10px;
   }
+  h3{
+    font-size: x-large;
+  }
+  .results{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .external img{
+    width: 40px;
+  }
+  .imgs{
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .imgs{
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .dict{
+    height: 120px;
+    margin-left: 10px;
+    padding-right: -10px;
+  }
+  h3{
+    font-size: larger;
+  }
+  .external img{
+    width: 35px;
+  }
+  .imgs{
+    height: 80px;
+  }
+  
+}
+
+@media only screen and (max-width: 325px) {
+  .external img{
+    width: 28px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+  }
+}
+
