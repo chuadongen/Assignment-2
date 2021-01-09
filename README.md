@@ -2,7 +2,7 @@
 Name: Chua Dong En<br/>
 Class: P01<br />
 ID: 10202623A<br />
-Website URL: https://chuadongen.github.io/Assignment-2/<br/>
+Website URL: https://chuadongen.github.io/Assignment-2/ID_S10202623_Assg2_website<br/>
 
 This project is a word search website. This website only has a main page. This website provides the user a quick and easy search for the meanings of a word.
 
