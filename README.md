@@ -54,6 +54,7 @@ To check and test my website, I used w3school's CSS and Markup service. This all
 1. W3C CSS Validation Service: https://jigsaw.w3.org/css-validator/ (negative padding)
 2. W3C Markup Validation Service: https://validator.w3.org/ (html lang, title, stay img tags)
 3. Alt tag checker: https://www.google.com/url?q=https://rushax.com/tools/alt-tag-checker/&sa=D&ust=1610201918001000&usg=AOvVaw1fzVBkk-8V-eKB4Yfx9BRA (fixed missing alt tags)
+4. JS Hint: https://jshint.com/
 ### Browsers
 To make sure my website works across browsers, I tested it both on chrome and firefox to check all of the implemeneted features
 ### Devices

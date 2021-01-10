@@ -5,7 +5,7 @@ $('#search').keypress(function(e){
         e.preventDefault();
         apicall();
     }
-})
+});
 
 
 //function for all api calls
@@ -13,12 +13,12 @@ function apicall(){
     //get search query
     var s1 = document.getElementById("search").value;
     //change external search links to links with query
-    $("#google").attr("href",("https://www.google.com/search?q="+s1+"&oq="+s1+"aqs=chrome.0.69i59j46i131i433j0i433j69i60l3j69i61j69i60.701j0j4&sourceid=chrome&ie=UTF-8"))
-    $("#bing").attr("href",("https://www.bing.com/search?q="+s1+"&form=QBLH&sp=-1&pq=&sc=0-0&qs=n&sk=&cvid=E34CB66164EB416AAB0F4275867DC20C"))
-    $("#merweb").attr("href",("https://www.merriam-webster.com/dictionary/"+s1))
-    $("#oxf").attr("href",("https://www.oxfordlearnersdictionaries.com/definition/english/"+s1+"?q="+s1))
-    $("#duckduckgo").attr("href",("https://duckduckgo.com/?q="+s1+"&t=h_"))
-    $("#youtube").attr("href",("https://www.youtube.com/results?search_query="+s1))
+    $("#google").attr("href",("https://www.google.com/search?q="+s1+"&oq="+s1+"aqs=chrome.0.69i59j46i131i433j0i433j69i60l3j69i61j69i60.701j0j4&sourceid=chrome&ie=UTF-8"));
+    $("#bing").attr("href",("https://www.bing.com/search?q="+s1+"&form=QBLH&sp=-1&pq=&sc=0-0&qs=n&sk=&cvid=E34CB66164EB416AAB0F4275867DC20C"));
+    $("#merweb").attr("href",("https://www.merriam-webster.com/dictionary/"+s1));
+    $("#oxf").attr("href",("https://www.oxfordlearnersdictionaries.com/definition/english/"+s1+"?q="+s1));
+    $("#duckduckgo").attr("href",("https://duckduckgo.com/?q="+s1+"&t=h_"));
+    $("#youtube").attr("href",("https://www.youtube.com/results?search_query="+s1));
 
     //api call for lingua dict
     fetch("https://lingua-robot.p.rapidapi.com/language/v1/entries/en/"+s1, {
@@ -270,8 +270,8 @@ function apicall(){
         $('#img').attr("src", data.value[0].contentUrl);
         //for subsequent images
         for (i = 1; i < 30; i++) {
-            var x = "#img"+i
-            $(x).attr("src",data.value[i].contentUrl)
+            var x = "#img"+i;
+            $(x).attr("src",data.value[i].contentUrl);
         }
     });
     
@@ -298,29 +298,29 @@ $('#search').keyup(function(e){
         var arr = [];
         //append html as child element
         for (i = 0; i <5; ++i) {
-            $('#suggestions').append('<div class="suggestion-content">'+data.data.results[i]+'</div>')   
+            $('#suggestions').append('<div class="suggestion-content">'+data.data.results[i]+'</div>');   
             arr.push(data.data.results[i]);
             
         }
-    //on click, search the query
-    $('.suggestion-content').mousedown(function(e){
-        var s2= this.innerHTML;
-        console.log(s2);
-        $('#search').val(s2);
-        
-        apicall();
-        
-        })
+        //on click, search the query
+        $('.suggestion-content').mousedown(function(e){
+            var s2= this.innerHTML;
+            console.log(s2);
+            $('#search').val(s2);
+            
+            apicall();
+            
+            });
         
     })
     .catch(err => {
         console.error(err);
     });
-})
+});
 //on focus out, clear suggestions to empty view
 $('#search').focusout(function(){
     $('#suggestions').empty();
-})
+});
 //load other 29 images
 $( document ).ready(function() {
     var error= "onerror=this.src='../Images/placeholder.png'";
