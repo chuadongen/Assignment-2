@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Assignment 2
 Name: Chua Dong En<br/>
 Class: P01<br />
 ID: 10202623A<br />
