@@ -71,6 +71,7 @@ To make sure the media query is working, I tested it by resizing it on chrome us
 ### Links
 To test my links, I had to ensure that internal links did not open a new page, while external links all opened a new page when clicked on. This is vital, as it improves the user experience.
 ## Credits
+
 ### Icons
 * Google: https://www.pngkit.com/bigpic/u2w7q8q8u2o0o0a9/
 * Youtube: https://www.stickpng.com/img/icons-logos-emojis/social-media-icons/circle-youtube-icon
